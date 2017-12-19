@@ -1,0 +1,398 @@
+﻿/*========================================所有屏幕通用================================*/
+
+.section {
+    overflow: hidden;
+    /*设置超出内容隐藏，防止出现水平滚动条*/
+    text-align: center;
+    font: 2rem "Microsoft Yahei";
+    color: #fff;
+}
+
+.section h1 {
+    font-size: 3.4rem;
+}
+
+.section p {
+    font-size: 1.4rem;
+}
+
+
+/*========================================首屏样式================================*/
+
+.section1 .avatar {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid rgba(255, 245, 245, 0.4);
+    opacity: 0;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+    position: relative;
+    -webkit-perspective: 500;
+    perspective: 500;
+    -webkit-transform: rotateY(300deg);
+    transform: rotateY(300deg);
+    -webkit-transform: rotateX(300deg);
+    transform: rotateX(300deg);
+    top: -900px;
+}
+
+.section1.active .avatar {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    top: 0;
+    opacity: 1;
+}
+
+.section1 h1,
+.section1 h2,
+.section1 p {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+
+.section1 h1 {
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+}
+
+.section1 h2 {
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+}
+
+.section1 p {
+    -webkit-transition-delay: .6s;
+    transition-delay: .6s;
+}
+
+.section1.active h1,
+.section1.active h2,
+.section1.active p {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.section1 .social {
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 20px;
+}
+.section1 .social .social-item {
+    display: inline-block;
+}
+.section1 .social .social-item > img {
+    max-width: 45px;
+    position: relative;
+    -webkit-transition: .3s ease-in-out transform;
+    transition: .3s ease-in-out transform;
+}
+.section1.active .social .social-item:hover > img {
+    transform: translateY(-30%)
+}
+
+
+/*========================================第二屏样式================================*/
+
+.section2 h1 {
+    margin: 0 auto 10px;
+    -webkit-perspective: 500;
+    perspective: 500;
+    -webkit-transform: rotateY(300deg);
+    transform: rotateY(300deg);
+    -webkit-transform: rotateX(300deg);
+    transform: rotateX(300deg);
+    top: -900px;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+}
+
+.section2.active h1 {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    top: 0;
+    opacity: 1;
+}
+
+.section2 i {
+    font-size: 9rem;
+    float: left;
+}
+
+.section2 p {
+    vertical-align: middle;
+}
+
+.section2 .row {
+    margin: 1rem 0;
+    height: 200px;
+}
+
+.section2 .wrap-item {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    perspective: 500;
+    -webkit-perspective: 500;
+}
+
+.section2 .item a,
+.section2 .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.section2 .item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 10px 0;
+    cursor: pointer;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+    -webkit-transform: rotateZ(45deg) rotateY(180deg) translateZ(300px);
+    transform: rotateZ(45deg) rotateY(180deg) translateZ(300px);
+}
+
+.section2.active .item {
+    -webkit-transform: rotateZ(0deg) rotateY(0deg) translateZ(0px);
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0px);
+}
+
+.section2.active .item:hover {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    box-shadow: 0 0px 4px 0px rgba(12, 99, 81, 0.9);
+}
+
+.section2 h2 .mob-show {
+        display: none;
+    }
+
+/*========================================第三屏样式================================*/
+
+.section3 h1 {
+    margin-bottom: 40px;
+    -webkit-transition: 2s;
+    transition: 2s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.section3 p {
+    font-size: 2rem;
+}
+
+.section3.active h1 {
+    margin-bottom: 40px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.section3.active .progress-bar {
+    background-color: #666699;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+
+.section3.active .progress-bar-1 {
+    width: 80%;
+}
+
+.section3.active .progress-bar-2 {
+    width: 65%;
+}
+
+.section3.active .progress-bar-3 {
+    width: 70%;
+}
+
+.section3.active .progress-bar-4 {
+    width: 65%;
+}
+
+.section3.active .progress-bar-5 {
+    width: 65%;
+}
+
+.section3.active .progress-bar-6 {
+    width: 60%;
+}
+
+
+/*========================================第四屏样式================================*/
+
+.section4 .work {
+    line-height: 2rem;
+    width: 600px;
+    margin: 0 auto;
+    -webkit-transition: 2s;
+    transition: 2s;
+    opacity: 0;
+}
+
+.section4.active .work {
+    opacity: 1;
+}
+
+.section4 .work h1 {
+    margin-bottom: 20px;
+}
+
+
+/*========================================第六屏样式================================*/
+
+.section6 h1 {
+    -webkit-transition: 2s;
+    transition: 2s;
+    margin-bottom: 20px;
+    position: relative;
+    opacity: 0;
+    top: -200px;
+}
+
+.section6.active h1 {
+    opacity: 1;
+    top: 0px;
+}
+
+.section6 p {
+    -webkit-transition: 2s;
+    transition: 2s;
+    position: relative;
+    opacity: 0;
+    top: -200px;
+}
+
+.section6.active p {
+    opacity: 1;
+    top: 0px;
+}
+
+.section6 a {
+    display: inline-block;
+    font-size: 1.4rem;
+    -webkit-transition: 2s;
+    transition: 2s;
+    position: relative;
+    opacity: 0;
+    top: -200px;
+}
+
+.section6 a:nth-child(3) {
+    font-size: 1.8rem;
+}
+
+.section6.active a {
+    opacity: 1;
+    top: 0px;
+}
+
+.section6 span {
+    -webkit-transition: 2s;
+    transition: 2s;
+    position: relative;
+    opacity: 0;
+    top: -200px;
+}
+
+.section6.active span {
+    opacity: 1;
+    top: 0px;
+}
+
+.progress {
+    overflow: visible;
+    margin-bottom: 26px;
+    height: 4px;
+}
+
+.progress .progress-bar {
+    background-color: #666699;
+    position: relative;
+    border-radius: 4px;
+}
+
+.progress .progress-bar span {
+    background-color: #666699;
+    position: absolute;
+    bottom: -20px;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 2px 3px 2px 4px;
+    right: -1.4em;
+    border-radius: 2px;
+}
+
+.progress .progress-bar span:after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(80, 37, 37, 0.00);
+    border-bottom-color: #666699;
+    border-width: 5px;
+    margin-left: -5px;
+}
+.section4 .work h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.section4 .work p {
+    line-height: 1.85;
+}
+.section6 .contact p {
+    font-size: 16px;
+}
+.section6 .load-btn {
+    display: inline-block;
+    width: 145px;
+    height: 45px;
+    line-height: 45px;
+    margin-top: 1em;
+    background-color: #5c4084;
+    border-radius: 3px;
+    letter-spacing: .6px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.section6 .load-btn .download {
+display: inline-block;
+height: 100%;
+width: 18px;
+margin-right: 15px;
+background-image: url('../images/download.png');
+background-position: center;
+background-size: 100% auto;
+background-repeat: no-repeat;
+}
+.section6 .load-btn .download,
+.section6 .load-btn .text {
+vertical-align: middle;
+}
+.section1 {
+position: relative;
+}
+.section1 .github {
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+}

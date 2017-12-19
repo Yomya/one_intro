@@ -1,0 +1,47 @@
+﻿
+@font-face {font-family: "iconfont";
+  src: url('../fonts/font_229844_1uxelr5u2j2d42t9.eot'); /* IE9*/
+  src: url('../fonts/font_229844_1uxelr5u2j2d42t9.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/efd09ccfc2b5408e9216522162913850.woff') format('woff'),
+  url('../fonts/font_229844_1uxelr5u2j2d42t9.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/font_229844_1uxelr5u2j2d42t9.svg') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-delete:before { content: "\e625"; }
+
+.icon-kuajingzhifuiconqiye:before { content: "\e600"; }
+
+.icon-shirt:before { content: "\e684"; }
+
+.icon-qita:before { content: "\e66c"; }
+
+.icon-jiaoyu01:before { content: "\e657"; }
+
+.icon-jr:before { content: "\e60c"; }
+
+.icon-medicine:before { content: "\e662"; }
+
+.icon-badaxilietubiao05-copy:before { content: "\e61e"; }
+
+.icon-chanpin:before { content: "\e634"; }
+
+.icon-lvyou:before { content: "\e601"; }
+
+.icon-tiyu:before { content: "\e603"; }
+
+.icon-shenghuo:before { content: "\e604"; }
+
+.icon-youxi:before { content: "\e605"; }
+
+.icon-yule:before { content: "\e606"; }
+
+.icon-meishi:before { content: "\e608"; }
+
